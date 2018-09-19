@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: auto;
+        background-color: blue;
+    }
+
+    .box-text{
+        color: white;
+        background: -ms-gradient(linear,left top,right top,color-stop(0,#4d4d4d),color-stop(.4,#4d4d4d),color-stop(.5,#fff),color-stop(.6,#4d4d4d),color-stop(1,#4d4d4d));
+        background: -webkit-gradient(linear,left top,right top,color-stop(0,#4d4d4d),color-stop(.4,#4d4d4d),color-stop(.5,#fff),color-stop(.6,#4d4d4d),color-stop(1,#4d4d4d));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: slidetounlock 3s infinite;
+        -webkit-animation: slidetounlock 3s infinite;
+    }
+
+    @-webkit-keyframes slidetounlock{
+        0%  {
+            background-position:-200px 0
+        }
+
+        100% {
+            background-position:200px 0
+        }
+    }
+
+</style>
+<body>
+<div>
+    文字跑马灯：
+    <div class="box">
+        <span class="box-text">滚动的文字，我是滚动的文字</span>
+    </div>
+</div>
+</body>
+</html>
